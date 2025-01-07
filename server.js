@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 
-mongoose.connect('MONGODB_URL/toyshop').then(() => {
+mongoose.connect(process.env.MONGODB_URL).then(() => {
     console.log('MongoDB atlas connected');
 }).catch(err => {
     console.error('MongoDB atlas connection error:', err);
