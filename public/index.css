@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    /* background: repeating-radial-gradient(circle, silver, rosybrown); */
+
+    background-image: url(./bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(20px); */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    /* height: 90vh; */
+}
+
+h1 {
+    margin: -10px;
+    font-size: 50px;
+    font-weight: 600;
+    /* animation: infinite bounce 2s ease-in-out; */
+    /* color: rgb(102, 97, 97); */
+    filter: sepia(60);
+    position: relative;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.balloon3 {
+    background: url(./balloon1rem.png);
+    /* background-size: cover; */
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    position: absolute;
+    top: -10px;
+    right: -200px;
+    background-repeat: no-repeat;
+    animation: infinite bounce3 6s ease-in-out;
+}
+
+@keyframes bounce3 {
+    10% {
+        transform: translateY(40px);
+    }
+
+    30% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(70px);
+    }
+
+    80% {
+        transform: translateY(-80px);
+    }
+
+    90% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(-90px);
+    }
+}
+
+.f {
+    text-shadow: 3px 2px 5px;
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.balloon {
+    background: url(./balloon1rem.png);
+    /* background-size: cover; */
+    background-position: center;
+    background-size: contain;
+    height: 900px;
+    position: absolute;
+    /* filter:brightness(40); */
+    top: 50px;
+    right: 180px;
+    background-repeat: no-repeat;
+    animation: infinite bounce 8s ease-in-out;
+}
+
+@keyframes bounce {
+    10% {
+        transform: translateY(10px);
+    }
+
+    30% {
+        transform: translate(-20px);
+    }
+
+    50% {
+        transform: translateY(70px);
+    }
+
+    80% {
+        transform: translateY(-80px);
+    }
+
+    90% {
+        transform: translate(-40px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+.balloon2 {
+    background: url(./balloon2-rem.png);
+    /* background-size: cover; */
+    background-position: center;
+    background-size: contain;
+    height: 190px;
+    scale: 1.3;
+    position: absolute;
+    top: 80px;
+    right: 120px;
+    background-repeat: no-repeat;
+    animation: infinite bounce2 6s ease-in-out;
+}
+
+@keyframes bounce2 {
+    10% {
+        transform: translateY(-40px);
+    }
+
+    30% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+
+    55% {
+        transform: translateX(-10px)
+    }
+
+    80% {
+        transform: translateY(-70px);
+    }
+
+    90% {
+        transform: translateY(-90px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+
+.card-whole {
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    padding: 20px; 
+    margin-top: 30px; 
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);  
+    border-radius: 15px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    margin: 15px;  
+    width: calc(50% - 30px);  
+    display: flex;  
+    flex-direction: column;  
+    transition: transform 0.2s;  
+}
+
+.card-content {
+    padding: 15px;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+}
+
+#price {
+    font-weight: bold;  
+    color: #333;  
+    margin: 10px 0 0 0;  
+}
+
+.buttons {
+    display: flex;  
+    justify-content: space-between;  
+    width: 100%;  
+    margin-top: 10px;  
+}
+
+button {
+    padding: 10px 15px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 1s;  
+}
+
+.edit {
+    background-color: #1ABC9C;  
+    /* color: black;   */
+}
+.edit a{
+    color: white;
+}
+.edit:hover {
+    background-color:#158871 ;  
+}
+
+form button {
+    background-color: #dc3545;  
+    color: white;  
+}
+
+form button:hover {
+    background-color: #c82333;  
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .buttons button {
+        padding: 8px;
+        font-size: 0.9rem; 
+    }
+    .balloon,.balloon2,.balloon3{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-whole {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .edit a {
+        font-size: 0.9rem;
+    }
+    .balloon,.balloon2,.balloon3{
+        display: none;
+    }
+}

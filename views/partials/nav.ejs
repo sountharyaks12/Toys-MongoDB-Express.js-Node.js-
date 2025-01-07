@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#1bb566">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunFinity Junction Nav Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            z-index: 1000;
+            height: 60px;
+            align-items: center;
+        }
+
+        button {
+            height: 40px;
+        }
+
+        #add-sym {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 15px;
+            }
+
+            #add-sym {
+                display: block;
+            }
+
+            .add {
+                display: none;
+            }
+        }
+
+        @media (max-width: 750px) {
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <h1><span class="f">F</span>un<span class="f">F</span>inity Junction
+                <pre class="balloon3">        </pre>
+            </h1>
+            <button class="add">
+                <a href="/toys/add">Add New Toy</a></button>
+            <button id="add-sym">
+                <a href="/toys/add" style="font-weight: bold;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+                    </svg>
+                </a></button>
+        </nav>
+    </div>
+</body>
+
+</html>

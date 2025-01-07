@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1bb566">
+    <title>Add Toy</title>
+    <link rel="stylesheet" href="/add.css">
+</head>
+
+<body>
+    <div class="whole">
+        <div class="main">
+            <h1>Add New Toy</h1>
+            <table>
+                <tr>
+                    <td>
+                        <form action="/toys" method="POST">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="name">Name:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="name" name="name" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="price">Price:</label>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="price" name="price" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="description">Description:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="description" name="description">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="stock">Stock:</label>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="stock" name="stock" value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="text-align: center;">
+                                        <div class="buttonCover">
+                                            <button type="submit" id="addB">Add Toy</button>
+                                            <a href="/toys">Back to Toy List</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+</body>
+
+</html>
