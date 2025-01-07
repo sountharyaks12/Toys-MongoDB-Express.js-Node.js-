@@ -5,12 +5,13 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const mongodb=process.env.MONGO_URI
 
 const mongoose = require('mongoose');
 require('dotenv').config();
 
 
-mongoose.connect(process.env.MONGODB_URL).then(() => {
+mongoose.connect(process.env.mongodb).then(() => {
     console.log('MongoDB atlas connected');
 }).catch(err => {
     console.error('MongoDB atlas connection error:', err);
