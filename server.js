@@ -1,4 +1,5 @@
 require('dotenv').config();
+const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
 const toyRoutes = require('./routes/toyRoutes');
@@ -8,10 +9,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const mongodb=process.env.MONGO_URI
 
-const mongoose = require('mongoose');
 
 
-mongoose.connect(process.env.mongodb).then(() => {
+mongoose.connect(mongodb, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
     console.log('MongoDB atlas connected');
 }).catch(err => {
     console.error('MongoDB atlas connection error:', err);
