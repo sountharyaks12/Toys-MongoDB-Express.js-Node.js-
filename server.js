@@ -7,11 +7,13 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const mongodb=process.env.MONGO_URI
+const uri=process.env.MONGO_URI
 
+if (!uri) {
+    throw new Error('abcdefghijklmnopqrstuvwxyz');
+  }
 
-
-mongoose.connect(mongodb, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+mongoose.connect(uri).then(() => {
     console.log('MongoDB atlas connected');
 }).catch(err => {
     console.error('MongoDB atlas connection error:', err);
