@@ -9,58 +9,31 @@
 </head>
 
 <body>
-    <div class="div">
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <form action="/toys/edit/<%= toy._id %>" method="POST">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <label for="name">Name:</label>
-                                    </td>
-                                    <td>
-                                        <input type="text" id="name" name="name" value="<%= toy.name %>" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="price">Price:</label>
-                                    </td>
-                                    <td>
-                                        <input type="number" id="price" name="price" value="<%= toy.price %>" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="description">Description:</label>
-                                    </td>
-                                    <td>
-                                        <input type="text" id="description" name="description"
-                                            value="<%= toy.description %>">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="stock">Stock:</label>
-                                    </td>
-                                    <td>
-                                        <input type="number" id="stock" name="stock" value="<%= toy.stock %>">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> <a href="/toys">Back to Toy List</a> </td>
-                                    <td  style="text-align: center;">
-                                        <button type="submit" id="updateBtn">Update Toy</button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </form>
-                    </td>
-                </tr>
-            </table>
-
+    <div class="container">
+        <div class="form-wrapper">
+            <h1 class="title">Edit Toy Details</h1>
+            <form action="/toys/edit/<%= toy._id %>" method="POST" class="edit-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="<%= toy.name %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" id="price" name="price" value="<%= toy.price %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" name="description" value="<%= toy.description %>">
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock</label>
+                    <input type="number" id="stock" name="stock" value="<%= toy.stock %>">
+                </div>
+                <div class="buttons">
+                    <a href="/toys" class="backLink">Back to Toy List</a>
+                    <button type="submit" id="updateBtn">Update Toy</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>

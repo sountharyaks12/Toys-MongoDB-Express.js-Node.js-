@@ -3,7 +3,6 @@
 
 body {
     padding: 30px;
-    font-family: Arial, sans-serif;
     /* background: repeating-radial-gradient(circle, silver, rosybrown); */
 
     background-image: url(./bg1.jpg);
@@ -24,7 +23,7 @@ h1 {
     font-weight: 600;
     /* animation: infinite bounce 2s ease-in-out; */
     /* color: rgb(102, 97, 97); */
-    filter: sepia(60);
+    /* filter: sepia(60); */
     position: relative;
 }
 
@@ -235,6 +234,9 @@ button {
 }
 .edit a{
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .edit:hover {
     background-color:#158871 ;  

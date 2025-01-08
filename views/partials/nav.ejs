@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#1bb566">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunFinity Junction Nav Bar</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -23,6 +26,16 @@
             align-items: center;
         }
 
+        h1 {
+            color: black;
+            font-family: 'Playfair Display', serif;
+
+        }
+
+        .finity {
+            color: teal;
+        }
+
         button {
             height: 40px;
         }
@@ -31,13 +44,35 @@
             display: none;
         }
 
+        .add a {
+            color: black;
+        }
+
+        .add:hover {
+            background-color: rgb(104, 151, 169);
+        }
+
+        .add a:hover {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
         @media (max-width: 480px) {
             h1 {
-                font-size: 15px;
+                font-size: 13px;
             }
 
             #add-sym {
-                display: block;
+                display: flex;
+                align-items: center;
+            }
+
+            #add-sym a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
             }
 
             .add {
@@ -47,7 +82,7 @@
 
         @media (max-width: 750px) {
             h1 {
-                font-size: 22px;
+                font-size: 32px;
             }
         }
     </style>
@@ -56,8 +91,8 @@
 <body>
     <div>
         <nav>
-            <h1><span class="f">F</span>un<span class="f">F</span>inity Junction
-                <pre class="balloon3">        </pre>
+            <h1>Fun<span class="finity">Finity</span> Junction</h1>
+            <pre class="balloon3">        </pre>
             </h1>
             <button class="add">
                 <a href="/toys/add">Add New Toy</a></button>

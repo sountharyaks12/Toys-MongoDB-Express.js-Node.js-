@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 const uri=process.env.MONGO_URI
 
 if (!uri) {
-    throw new Error('abcdefghijklmnopqrstuvwxyz');
+    throw new Error('uri errror');
   }
 
 mongoose.connect(uri).then(() => {
