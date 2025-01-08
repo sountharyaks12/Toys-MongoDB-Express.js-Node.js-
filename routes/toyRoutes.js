@@ -1,3 +1,4 @@
+
 const express = require('express');
 const Toy = require('../models/Toy');
 const router = express.Router();
@@ -63,20 +64,7 @@ router.post('/edit/:id', async (req, res) => {
     }
 });
 
-// DELETE a toy
-// router.get('/delete/:id', async (req, res) => {
-//     try {
-//         const toy = await Toy.findById(req.params.id);
-//         if (!toy) return res.status(404).json({ message: 'Toy not found' });
-
-//         // await toy.remove();
-//         res.redirect('/toys');
-//     } catch (err) {
-//         res.status(500).json({ message: err.message });
-//     }
-// });
-
-//delete
+// delete
 // router.post('/delete/:name', async (req, res) => {
 //     try {
 //         const { name } = req.params;
@@ -102,5 +90,6 @@ router.post('/delete/:id', async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
+
 
 module.exports = router;
