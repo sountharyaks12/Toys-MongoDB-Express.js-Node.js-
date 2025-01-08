@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     height: 70vh;
@@ -6,12 +6,10 @@ body {
     background-size: cover;
     background: url(./toys.webp);
     background-position: center;
-    /* background-color: rgb(174, 121, 211); */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* color: whitesmoke; */
 
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -19,14 +17,8 @@ body {
 }
 
 h1 {
-    /* margin-top: -100px; */
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-size: 60px;
-    /* font-family: "Lily Script One", system-ui; */
     font-weight: 600;
-    /* font-style: normal; */
-    /* color:aliceblue; */
-    /* background-color: yellow; */
 }
 
 .f {
@@ -36,7 +28,6 @@ h1 {
 }
 
 h2 {
-    /* background-color: red; */
     margin-top: 10px;
 }
 
@@ -61,15 +52,11 @@ a {
 }
 
 .bgimg {
-    /* background-image: url(./img1.jpg); */
-    /* height: 200px; */
-    /* width: 300px; */
     background-position: center;
     background-size: cover;
 }
 
 .myDiv {
-    /* background-color: rgb(112, 128, 144,0.3); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,8 +75,6 @@ button {
 }
 
 button:hover {
-    /* box-shadow: 0px 0px 10px white, 0px 0px 20px white,
-        0px 0px 30px white; */
     color: black;
     background: repeating-radial-gradient(circle, rgb(190, 187, 187), rgb(104, 104, 100));
 }
@@ -104,23 +89,127 @@ button:hover a #angle {
     font-weight: bolder;
 }
 
-/* .cloud {
-    position: absolute;
-    top: -100px;
-    left: 10px;
-    margin-left: -400px;
-    background-image: url(./star-1.png);
-    height: 300px;
-    width: 500px;
-    width: max-content;
-    zoom: 2;
-    overflow: hidden;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-repeat: space;
-    background-size: cover;
-    animation: infinite star 1s;
-} */
 .main {
     margin-top: 20px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    height: 100vh; /* Changed to 100vh for full height */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(./toys.webp);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem; /* Responsive font size */
+    font-weight: 600;
+}
+
+.f {
+    text-shadow: 3px 2px 5px;
+    font-weight: bolder;
+    font-size: 5rem; /* Responsive font size */
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+p {
+    font-family: "Lily Script One", system-ui;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem; /* Responsive font size */
+}
+
+#angle {
+    color: white;
+    font-size: 1rem; /* Responsive font size */
+    font-weight: bold;
+}
+
+.myDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px; /* Increased padding for better touch targets */
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Added background for better contrast */
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1rem; /* Responsive font size */
+}
+
+button:hover {
+    color: black;
+    background: repeating-radial-gradient(circle, rgb(190, 187, 187), rgb(104, 104, 100));
+}
+
+button:hover a {
+    color: black;
+    font-weight: bold;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; /* Smaller font size for mobile */
+    }
+
+    .f {
+        font-size: 4rem; /* Smaller font size for mobile */
+    }
+
+    p {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    button {
+        padding: 8px 16px; /* Adjust button size for mobile */
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem; /* Even smaller font size for very small screens */
+    }
+
+    .f {
+        font-size: 3rem; /* Even smaller font size for very small screens */
+    }
+
+    p {
+        font-size: 0.8rem; /* Even smaller font size for very small screens */
+    }
+
+    button {
+        padding: 6px 12px; /* Adjust button size for very small screens */
+        font-size: 0.8rem; /* Smaller font size for very small screens */
+    }
 }
