@@ -99,7 +99,7 @@ body {
     height: 100vh; /* Changed to 100vh for full height */
     background-repeat: no-repeat;
     background-size: cover;
-    background: url(./toys.webp);
+    background-image: url(./toys.webp);
     background-position: center;
     display: flex;
     justify-content: center;
